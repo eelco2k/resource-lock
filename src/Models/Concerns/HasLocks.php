@@ -118,9 +118,9 @@ trait HasLocks
     /**
      * Finds and returns the current guard of the auth user.
      *
-     * @return array|null
+     * @return string|null
      */
-    private function getCurrentAuthGuardName(): array|null
+    private function getCurrentAuthGuardName(): string|null
     {
         $guards = array_keys(config('auth.guards'));
 
